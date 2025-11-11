@@ -1,0 +1,14 @@
+  {{#each games}}
+  <li class="item">
+    {{#if images}}
+<img src ="{{images}}" alt="{{title}}" class="img"></img>
+{{else}}
+<img src="https://www.google.com/imgres?q=img%20error&imgurl=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F504708-200.png&imgrefurl=https%3A%2F%2Fthenounproject.com%2Fbrowse%2Ficons%2Fterm%2Fimage-error%2F&docid=zho0Rjj1O1f4_M&tbnid=F6k1IXqOmiLDJM&vet=12ahUKEwjYw7ah4OSQAxWHSvEDHdBrKIkQM3oECBUQAA..i&w=200&h=200&hcb=2&ved=2ahUKEwjYw7ah4OSQAxWHSvEDHdBrKIkQM3oECBUQAA" alt="" class="img">
+{{/if}}
+
+<h2 class="title">{{title}}</h2>
+<p class="genere">{{genere}}</p>
+<p class="plat">{{platforms}}</p>
+<p class="desk">{{note}}</p>
+</li>
+  {{/each}}
